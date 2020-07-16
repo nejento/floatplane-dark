@@ -503,6 +503,6 @@
 @-moz-document regexp("https://www\\.floatplane\\.com\\/support.*") {
     /* Exclusion for support pages */
     body {
-        color: #000;
+        color: #0c1012;
     }
 }

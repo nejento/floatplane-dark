@@ -498,3 +498,10 @@
     }
     */
 }
+
+@-moz-document regexp("https://www\\.floatplane\\.com\\/(?!support).*$") {
+    /* Exclusion for support pages */
+    body {
+        color: #000;
+    }
+}

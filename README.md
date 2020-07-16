@@ -1,6 +1,10 @@
 # Floatplane Dark theme (floatplane-dark)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/nejento/floatplane-dark?label=version)](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css)
+[![GitHub tag (latest by date)](https://img.shields.io/badge/install-UserCSS-blueviolet)](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css)
+
 Dark themed UserCSS for the [Floatplane.com](https://www.floatplane.com) subscription service for browser theming extensions like Stylus or Stylish.
 This theme can be considered as a temporary dark theme until Floatplane gets its own dark theme
+
 
 ## Preview
 

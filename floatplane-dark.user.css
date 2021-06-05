@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Floatplane Dark theme
-@version     1.0.0
+@version     1.1.0
 @namespace   nejento
 @author      nejento
 @description Dark themed UserCSS for the Floatplane.com subscription service for browser theming extensions like Stylus or Stylish 
@@ -62,9 +62,10 @@
     /* Channel homepage */
     /* ---------------- */
     /* Header */
-    .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav {
-        background: #0e0e10;
-        box-shadow: inset 0 -1px 0 #333, -1px 0 0 #0e0e10, 1px 0 0 #0e0e10;
+    .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav,
+    .ReactProfileNavContainer .ReactProfileNavInternal {
+        background: #0e0e10 !important;
+        box-shadow: inset 0 -1px 0 #333, -1px 0 0 #0e0e10, 1px 0 0 #0e0e10 !important;
     }
 
     /* Header transition */
@@ -84,12 +85,14 @@
     /* Active button in header */
     .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav .channel-nav-item.active,
     .tabs-wrapper .nav .nav-item.active,
-    .ProfileNavItemComponent.active {
-        color: #fff !important;
+    .ProfileNavItemComponent.active,
+    .ReactProfileNavItem.active {
+        color: rgb(0, 144, 211) !important;
     }
 
     /* Header search */
-    .channel-search .search-bar.focus {
+    .channel-search .search-bar.focus,
+    .ReactChannelIntroSearch.active .SearchInput {
         background: #ffffff0a !important;
         box-shadow: inset 0 -1px 0 #444 !important;
         border-left: none !important;
@@ -114,16 +117,15 @@
     }
 
     /* Subbox */
-    .subBox {
-        background-color: #222 !important;
-    }
-
-    .subBox.sharp {
+    .subBox, .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer,
+    .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer.sharp {
+        background-color: rgb(30, 30, 30) !important;
         box-shadow: inset 0 -1px 0 #333, -1px 0 0 #333, 1px 0 0 #333 !important;
     }
 
     .subBox .header .price,
-    .subBox .header .sub-count {
+    .subBox .header .sub-count,
+    .ReactChannelStatsContainer > div .income-value, .ReactChannelStatsContainer > div .subs-count {
         color: #888 !important;
     }
 
@@ -144,8 +146,9 @@
     /* Video */
     /* ----- */
     /* Video list */
-    .video-content-wrapper .video-list .video-list-item + .video-list-item {
-        border-top: 1px solid #333;
+    .video-content-wrapper .video-list .video-list-item + .video-list-item,
+    .post-list .post-list-item + .post-list-item {
+        border-top: 1px solid #333 !important;
     }
 
     /* Comments input box */
@@ -186,6 +189,14 @@
         border: 1px solid #333;
     }
 
+    .DescriptionHeaderComponent {
+        border-bottom: 1px solid #444 !important;
+    }
+
+    fp-quill-viewer p, fp-quill-viewer, .quill-viewer p {
+        color: #b5b5b5 !important;
+    }
+
     /* Title */
     .video-content-wrapper .video-description-wrapper .video-description-header .video-title,
     .DescriptionHeaderComponent .video-title {
@@ -199,8 +210,9 @@
 
     /* Subtitle */
     .video-content-wrapper .video-description-wrapper .video-description-header .channel-info .channel-title,
+    .video-description-wrapper .video-description *,
     .video-description-wrapper .video-description {
-        color: #eee !important;
+        color: #bfbfbf !important;
     }
 
     /* Links in descriptions */
@@ -219,8 +231,9 @@
     }
 
     /* Show more button */
-    .video-content-wrapper .video-description-wrapper .expand-description {
-        background: #444;
+    .video-content-wrapper .video-description-wrapper .expand-description,
+    .DescriptionBodyComponent .expand {
+        background: #444 !important;
     }
 
     /* Vote button */
@@ -397,7 +410,8 @@
     }
 
     /* Creator card */
-    .creator-cards figure {
+    .creator-cards figure,
+    .creator-box {
         background-color: #333 !important;
         border-radius: 5px !important;
     }
@@ -430,6 +444,26 @@
         border: 1px solid #333;
     }
 
+    .chat-message-list {
+        background: #111 !important;
+    }
+
+    .live-chat-wrapper .live-chat-sizer {
+        border-left: none !important;
+    }
+
+    /* Emote picker */
+    .expand {
+        background: #000 !important;
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    /* Emoji container */
+    .chat-emoji-container, .chat-scroll-message {
+        background-color: #2b2b2b !important;
+    }
+
     /* Chat options */
     /*.chat-messages-options[_ngcontent-c5],*/
     .chat-messages-options {
@@ -438,13 +472,15 @@
 
     /* Username */
     /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message[_ngcontent-c5] .chat-username[_ngcontent-c5],*/
+    .chat-message-list .chat-message .chat-username,
     .chat-messages-container .message-list .chat-message .chat-username {
         color: #aaa !important;
+
     }
 
     /* Chat message container */
     /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message[_ngcontent-c5],*/
-    .chat-messages-container .message-list .chat-message {
+    .chat-messages-container .message-list .chat-message, .chat-message-list .chat-message {
         border-bottom: 1px solid #333 !important;
     }
 
@@ -459,6 +495,8 @@
 
     /* Chat input */
     /*.chat-messages-container[_ngcontent-c5] .chat-entry-container[_ngcontent-c5],*/
+    .chat-input-container,
+    .chat-input-container, .chat-input,
     .chat-messages-container .chat-entry-container {
         background-color: #333 !important;
         border-top: 1px solid #333 !important;
@@ -467,6 +505,11 @@
     /*.chat-messages-container[_ngcontent-c5] .chat-entry-container[_ngcontent-c5] .chat-input[_ngcontent-c5],*/
     .chat-messages-container .chat-entry-container .chat-input {
         background-color: #333 !important;
+    }
+
+    /* Viewer list */
+    .chat-view-container {
+        background: #111 !important;
     }
 
     /* ------ */
@@ -492,12 +535,6 @@
     .channel-title {
         color: #333;
     }
-
-    /*
-    .video-content-wrapper .video-description-wrapper .video-description-header .video-title, .video-content-wrapper .video-description-wrapper .video-description-header .channel-info, .channel-title {
-    color: #fff;
-    }
-    */
 }
 
 @-moz-document regexp("https://www\\.floatplane\\.com\\/support.*") {

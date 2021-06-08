@@ -1,4 +1,6 @@
 # Floatplane Dark theme (floatplane-dark)
+![Logo of the Floatplane Dark theme](./images/ThemeLogo.png)
+
 [![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/nejento/floatplane-dark?label=version)](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css)
 [![GitHub tag (latest by date)](https://img.shields.io/badge/install-UserCSS-blueviolet)](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css)
 

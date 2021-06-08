@@ -451,6 +451,17 @@
     .live-chat-wrapper .live-chat-sizer {
         border-left: none !important;
     }
+    
+    /* Chat message */
+    .chat-message-list .chat-message .chat-text {
+        color: #9aa1ac !important;
+    }
+    
+        
+    /* Chat mention */
+    .chat-message-list .chat-message .chat-text .text-mention {
+        color: #609eff !important;
+    }
 
     /* Emote picker */
     .expand {

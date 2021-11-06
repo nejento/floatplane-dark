@@ -16,7 +16,7 @@ This theme can be considered as a temporary dark theme until Floatplane gets its
 ## Installation
 
 1. Install [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) or [Cascadea for Safari](https://cascadea.app/).
-2. Install [floatplane-dark.css](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css).
+2. Install [floatplane-dark.css](https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css) or install from [Userstyles](https://userstyles.world/style/176/floatplane-dark-theme)
 
 ## Contributions
 

@@ -529,6 +529,11 @@
         border-left: none !important;
     }
     
+    /* Player width */
+    .player-wrapper .player-container.livestream {
+        max-width: 100%;
+    }
+    
     /* Chat message */
     .chat-message-list .chat-message .chat-text {
         color: #9aa1ac !important;

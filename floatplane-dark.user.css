@@ -19,7 +19,6 @@
     /* If there are any problems with the theme, you may try to contact me via private messages on Twitter, LinusTechTips forums or on Discord */
     /* !important flag is implemented due to _ngcontent attribues which are added during compilation of the website: [_ngcontent-c14] */
     /* The !important flag allows to apply the CSS rule over the CSS rules given with selectors with attributes attached to them */
-
     /* ---- */
     /* Page */
     /* ---- */
@@ -31,12 +30,10 @@
     body {
         color: #eee;
     }
-
     /* Page background */
     .page-wrapper .route-wrapper {
         background-color: #0e0e10;
     }
-
     /* ------- */
     /* Sidebar */
     /* ------- */
@@ -44,12 +41,10 @@
     .sidebar {
         background: #000;
     }
-
-    /* Dropup */
-    .sidebar .sb-hovergroup > .subscription-item > .dropup {
-        background: #222;
-    }
-
+        /* Dropup */
+        .sidebar .sb-hovergroup > .subscription-item > .dropup {
+            background: #222;
+        }
     /* -------- */
     /* Homepage */
     /* -------- */
@@ -57,7 +52,6 @@
         background: #0e0e10;
         box-shadow: inset 0 -1px 0 #333, -1px 0 0 #0e0e10, 1px 0 0 #0e0e10;
     }
-
     /* ---------------- */
     /* Channel homepage */
     /* ---------------- */
@@ -67,26 +61,22 @@
         background: #0e0e10 !important;
         box-shadow: inset 0 -1px 0 #333, -1px 0 0 #0e0e10, 1px 0 0 #0e0e10 !important;
     }
-    
     /* Channel title */
     .DescriptionHeaderComponent .channel-info .channel-title, .channel-title {
         color: #fff;
     }
-
     /* Header transition */
     .channel-card .channel-card-header .channel-bg-wrapper .channel-bg::after,
     .channel-intro-wrapper .channel-intro-bg-wrapper::after,
     .page-wrapper .hero-wrapper .hero .hero-background::after {
         background: linear-gradient(to top, rgba(14, 14, 16, 0.6) 0%, rgba(14, 14, 16, 0) 75%) !important;
     }
-
     /* Header hover */
     .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav .channel-nav-item:hover,
     .tabs-wrapper .nav .nav-item:hover {
         background: rgba(255, 255, 255, 0.05);
         color: #0094c8;
     }
-
     /* Active button in header */
     .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav .channel-nav-item.active,
     .tabs-wrapper .nav .nav-item.active,
@@ -94,7 +84,6 @@
     .ReactProfileNavItem.active {
         color: rgb(0, 144, 211) !important;
     }
-
     /* Header search */
     .channel-search .search-bar.focus,
     .ReactChannelIntroSearch.active .SearchInput {
@@ -102,7 +91,6 @@
         box-shadow: inset 0 -1px 0 #444 !important;
         border-left: none !important;
     }
-
     /* Video titles */
     .info-box .title,
     .video-content-wrapper .video-list .video-list-item,
@@ -110,17 +98,34 @@
         color: #eee !important
     }
 
+    .PostTileTitle {
+        color: #eee !important
+    }
+
+    .PostTileAge {
+        color: #eee !important
+    }
+
+    .PostTileInfoMinor a {
+        color: #eee !important
+    }
+
+    .PostTileMediaBox .duration {
+        color: #eee !important
+    }
+
+    .ReactRelatedPostList .related-section .title {
+        color: #eee !important
+    }
     /* Channel description */
     .markdown-body {
         color: #eee;
     }
-
-    /* Channel description underline */
-    .markdown-body h1,
-    .markdown-body h2 {
-        border-bottom: 1px solid #555;
-    }
-
+        /* Channel description underline */
+        .markdown-body h1,
+        .markdown-body h2 {
+            border-bottom: 1px solid #555;
+        }
     /* Subbox */
     .subBox, .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer,
     .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer.sharp {
@@ -128,29 +133,27 @@
         box-shadow: inset 0 -1px 0 #333, -1px 0 0 #333, 1px 0 0 #333 !important;
     }
 
-    .subBox .header .price,
-    .subBox .header .sub-count,
-    .ReactChannelStatsContainer > div .income-value, .ReactChannelStatsContainer > div .subs-count {
-        color: #fff;
-    }
-    
+        .subBox .header .price,
+        .subBox .header .sub-count,
+        .ReactChannelStatsContainer > div .income-value, .ReactChannelStatsContainer > div .subs-count {
+            color: #fff;
+        }
+
     .ReactPlanBoxHeaderContainer .price {
         color: #aaa;
     }
-
     /* Modal */
     .modal-content {
         background-color: #222;
     }
+
     .subBox.feather {
         border: 1px solid #333 !important;
     }
-
     /* Channel name in modal */
     .creatorMain .creatorCard .creatorVital .creatorTitle {
         color: #fff !important;
     }
-    
     /* ------ */
     /* Player */
     /* ------ */
@@ -158,7 +161,6 @@
     .player-background {
         background: none !important;
     }
-
     /* ----- */
     /* Video */
     /* ----- */
@@ -166,13 +168,11 @@
     .route-wrapper {
         background: #0e0e10 !important;
     }
-    
     /* Video list */
     .video-content-wrapper .video-list .video-list-item + .video-list-item,
     .post-list .post-list-item + .post-list-item {
         border-top: 1px solid #333 !important;
     }
-
     /* Comments input box */
     .video-content-wrapper .textarea-wrapper textarea,
     .CommentReplyInput textarea {
@@ -182,12 +182,10 @@
         padding: 7px;
         border-radius: 5px;
     }
-    
-    /* Comment input box placeholder */
-    .CommentReplyInput textarea::placeholder {
-        color: #fff;
-    }
-
+        /* Comment input box placeholder */
+        .CommentReplyInput textarea::placeholder {
+            color: #fff;
+        }
     /* Comments authors */
     .video-content-wrapper .comments-wrapper .comment .comment-header .header-text .author,
     .video-content-wrapper .comments-wrapper .comment .reply-header .header-text .author,
@@ -200,37 +198,31 @@
     .ReactCommentComponent .comment-header .author {
         color: #aaa;
     }
-    
     /* Comment body */
     .ReactCommentComponent .comment-body {
         color: #b5b5b5;
     }
-    
     /* Comment actions */
     .ReactContentButton.variant-icon-text, .ReactContentButton.variant-text,
     .ReactContentButton {
         color: #ccc;
     }
-    
-    /* Comment Like buttons */
-    .ReactContentButton.variant-interaction > svg * {
-        fill: #ccc;
-    }
-    
+        /* Comment Like buttons */
+        .ReactContentButton.variant-interaction > svg * {
+            fill: #ccc;
+        }
     /* Comment load more */
     .ReactCommentReplies .loadMoreButton > span {
         color: #aaa;
     }
-
     /* Download dropdown */
     .download-container .dropdown {
         background: #333 !important;
     }
 
-    .download-container .dropdown .dropdown-item {
-        color: #ccc !important;
-    }
-
+        .download-container .dropdown .dropdown-item {
+            color: #ccc !important;
+        }
     /* ------------ */
     /* Descriptions */
     /* ------------ */
@@ -249,52 +241,43 @@
     fp-quill-viewer p, fp-quill-viewer, .quill-viewer p {
         color: #b5b5b5 !important;
     }
-
     /* Title */
     .video-content-wrapper .video-description-wrapper .video-description-header .video-title,
     .DescriptionHeaderComponent .video-title, .title-text {
         color: #fff !important;
     }
-
     /* Channel name under title */
     .ReactDescriptionHeaderComponent .section-channel .info .channel-title {
         color: #c6c6c6;
     }
-
     /* Subtitle */
     .video-content-wrapper .video-description-wrapper .video-description-header .channel-info .channel-title,
     .video-description-wrapper .video-description *,
     .video-description-wrapper .video-description {
         color: #bfbfbf !important;
     }
-
     /* Links in descriptions */
     .video-content-wrapper .video-description-wrapper .video-description a {
         color: #5886bd;
     }
-
     /* Underline */
     .video-content-wrapper .video-description-wrapper .video-description-header {
         border-bottom: 1px solid #444;
     }
-
     /* Gradient for readmore */
     .video-content-wrapper .video-description-wrapper .video-description::after,
     .DescriptionBodyComponent .text-container::after {
         background: linear-gradient(to top, #1a1a1a 0%, rgba(255, 251, 251, 0) 70%);
     }
-
     /* Show more button */
     .video-content-wrapper .video-description-wrapper .expand-description,
     .DescriptionBodyComponent .expand {
         background: #1a1a1a !important;
     }
-
     /* Vote button */
     .vote-button:not(.highlight) {
         background-color: #888 !important;
     }
-    
     /* ------------------ */
     /* Recommended videos */
     /* ------------------ */
@@ -302,34 +285,28 @@
     .ReactRelatedPostList > .title {
         color: #fff;
     }
-    
     /* Video title */
     .ReactRelatedPostList .post-list-item .info .title {
         color: #fff;
     }
-    
     /* Creator */
     .ReactRelatedPostList .post-list-item .info .row-minor a {
         color: #888;
     }
-    
     /* Date */
     .ReactRelatedPostList .post-list-item .info .row-minor {
         color: #6d6d6d;
     }
-
     /* ------------- */
     /* User activity */
     /* ------------- */
     .activity-feed .activity-feed-period .feed-list {
         color: #bbb !important;
     }
-
-    /* Links */
-    .activity-feed .activity-feed-period .feed-list .feed-item .item-caption a {
-        color: #5886bd !important;
-    }
-
+        /* Links */
+        .activity-feed .activity-feed-period .feed-list .feed-item .item-caption a {
+            color: #5886bd !important;
+        }
     /* ------------- */
     /* User settings */
     /* ------------- */
@@ -340,27 +317,27 @@
         border: 1px solid #333;
     }
 
-    .cms-layout .cms-pane .col-section > .row-section,
-    .cms-layout .settings-pane .col-section > .row-section,
-    .settings-layout-right .settings-pane .col-section > .row-section {
-        border-bottom: 1px solid #333;
-    }
+        .cms-layout .cms-pane .col-section > .row-section,
+        .cms-layout .settings-pane .col-section > .row-section,
+        .settings-layout-right .settings-pane .col-section > .row-section {
+            border-bottom: 1px solid #333;
+        }
 
-    .cms-layout .cms-pane .col-section,
-    .cms-layout .settings-pane .col-section,
-    .settings-layout-right .settings-pane .col-section {
-        border-left: 1px solid #333;
-        border-bottom: 1px solid #333;
-    }
+        .cms-layout .cms-pane .col-section,
+        .cms-layout .settings-pane .col-section,
+        .settings-layout-right .settings-pane .col-section {
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
 
-    .cms-layout .cms-pane .col-section > .row-section > .row-title.subtitle,
-    .cms-layout .settings-pane .col-section > .row-section > .row-title.subtitle,
-    .settings-layout-right .settings-pane .col-section > .row-section > .row-title.subtitle,
-    .cms-layout .cms-pane .col-section > .row-section > .row-title,
-    .cms-layout .settings-pane .col-section > .row-section > .row-title,
-    .settings-layout-right .settings-pane .col-section > .row-section > .row-title {
-        color: #fff;
-    }
+            .cms-layout .cms-pane .col-section > .row-section > .row-title.subtitle,
+            .cms-layout .settings-pane .col-section > .row-section > .row-title.subtitle,
+            .settings-layout-right .settings-pane .col-section > .row-section > .row-title.subtitle,
+            .cms-layout .cms-pane .col-section > .row-section > .row-title,
+            .cms-layout .settings-pane .col-section > .row-section > .row-title,
+            .settings-layout-right .settings-pane .col-section > .row-section > .row-title {
+                color: #fff;
+            }
 
     .settings-general .username,
     .stats-group > .stat-item > .value {
@@ -384,7 +361,6 @@
     .settings-general {
         border-bottom: 1px solid #444 !important;
     }
-
     /* Invoice */
     .invoice:not(:last-child) {
         border-bottom: 1px solid #444 !important;
@@ -401,17 +377,15 @@
     .invoice .invoice-content {
         color: #eee !important;
     }
-
     /* Menu */
     .settings-layout-left .navlist {
         background: #000;
         border: 1px solid #333;
     }
 
-    .settings-layout-left .navlist > .navlist-item:not(:first-of-type) {
-        border-top: 1px solid #333;
-    }
-
+        .settings-layout-left .navlist > .navlist-item:not(:first-of-type) {
+            border-top: 1px solid #333;
+        }
     /* Headers */
     .white-background {
         background: #333 !important;
@@ -437,7 +411,6 @@
     .settings-layout-right .settings-pane .col-section > .row-section {
         color: #fff;
     }
-
     /* Inputs */
     .cms-layout .cms-pane .input-group textarea,
     .cms-layout .cms-pane .input-group > input,
@@ -475,7 +448,6 @@
     .settings-layout-right .settings-pane .input-group > input + label {
         color: #ddd;
     }
-
     /* -------------------- */
     /* Browse creators page */
     /* -------------------- */
@@ -485,7 +457,6 @@
         background: #222 !important;
         color: #eee !important;
     }
-
     /* Creator card */
     .creator-cards figure,
     .creator-box {
@@ -493,25 +464,22 @@
         border-radius: 5px !important;
     }
 
-    .creator-cards figure .boxWrap img {
-        height: 100% !important;
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-top: 0 !important;
-        border-radius: 5px 5px 0 0 !important;
-    }
-
+        .creator-cards figure .boxWrap img {
+            height: 100% !important;
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-top: 0 !important;
+            border-radius: 5px 5px 0 0 !important;
+        }
     /* Channel name */
     .wrapper-part-info {
         background-color: #222 !important;
         border-radius: 0 0 5px 5px !important;
     }
-
     /* Channel name */
     #part-info {
         color: #ddd !important;
     }
-
     /* ---- */
     /* Chat */
     /* ---- */
@@ -528,64 +496,52 @@
     .live-chat-wrapper .live-chat-sizer {
         border-left: none !important;
     }
-    
     /* Player width */
     .player-wrapper .player-container.livestream {
         max-width: 100%;
     }
-    
     /* Chat message */
     .chat-message-list .chat-message .chat-text {
         color: #9aa1ac !important;
     }
-    
-        
-    /* Chat mention */
-    .chat-message-list .chat-message .chat-text .text-mention {
-        color: #609eff !important;
-    }
-
+        /* Chat mention */
+        .chat-message-list .chat-message .chat-text .text-mention {
+            color: #609eff !important;
+        }
     /* Emote picker */
     .expand {
         background: #000 !important;
         border-top: none !important;
         border-bottom: none !important;
     }
-
     /* Emoji container */
     .chat-emoji-container, .chat-scroll-message {
         background-color: #2b2b2b !important;
     }
-
     /* Chat options */
     /*.chat-messages-options[_ngcontent-c5],*/
     .chat-messages-options {
         background-color: #333 !important;
     }
-
     /* Username */
     /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message[_ngcontent-c5] .chat-username[_ngcontent-c5],*/
     .chat-message-list .chat-message .chat-username,
     .chat-messages-container .message-list .chat-message .chat-username {
         color: #aaa !important;
-
     }
-
     /* Chat message container */
     /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message[_ngcontent-c5],*/
     .chat-messages-container .message-list .chat-message, .chat-message-list .chat-message {
         border-bottom: 1px solid #333 !important;
     }
-
-    /* Chat message container - Moderator, Creator */
-    /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message.type-Creator[_ngcontent-c5],
+        /* Chat message container - Moderator, Creator */
+        /*.chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message.type-Creator[_ngcontent-c5],
         .chat-messages-container[_ngcontent-c5] .message-list[_ngcontent-c5] .chat-message.type-Moderator[_ngcontent-c5],*/
-    .chat-messages-container .message-list .chat-message.type-Creator,
-    .chat-messages-container .message-list .chat-message.type-Moderator {
-        background: #1e2833 !important;
-        border-bottom: 1px solid #333 !important;
-    }
-
+        .chat-messages-container .message-list .chat-message.type-Creator,
+        .chat-messages-container .message-list .chat-message.type-Moderator {
+            background: #1e2833 !important;
+            border-bottom: 1px solid #333 !important;
+        }
     /* Chat input */
     /*.chat-messages-container[_ngcontent-c5] .chat-entry-container[_ngcontent-c5],*/
     .chat-input-container,
@@ -594,12 +550,10 @@
         background-color: #333 !important;
         border-top: 1px solid #333 !important;
     }
-
-    /*.chat-messages-container[_ngcontent-c5] .chat-entry-container[_ngcontent-c5] .chat-input[_ngcontent-c5],*/
-    .chat-messages-container .chat-entry-container .chat-input {
-        background-color: #333 !important;
-    }
-
+        /*.chat-messages-container[_ngcontent-c5] .chat-entry-container[_ngcontent-c5] .chat-input[_ngcontent-c5],*/
+        .chat-messages-container .chat-entry-container .chat-input {
+            background-color: #333 !important;
+        }
     /* Viewer list */
     .chat-view-container {
         background: #111 !important;

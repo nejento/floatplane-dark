@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name        Floatplane Dark theme
-@version     1.3.1
+@version     1.3.2
 @namespace   nejento
 @author      nejento
 @description Dark themed UserCSS for the Floatplane.com subscription service for browser theming extensions like Stylus or Stylish 
 @homepageURL https://github.com/nejento/floatplane-dark
 @supportURL  https://github.com/nejento/floatplane-dark/issues
-@updateURL   https://raw.githubusercontent.com/nejento/floatplane-dark/master/floatplane-dark.user.css
+@updateURL   https://userstyles.world/api/style/176.user.css
 @license     The Unlicense
 @preprocessor uso
 ==/UserStyle== */
@@ -63,9 +63,10 @@
     /* ---------------- */
     /* Header */
     .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav,
-    .ReactProfileNavContainer .ReactProfileNavInternal {
+    .ReactProfileNavContainer .ReactProfileNavInternal,
+    .ProfileIntroBarGeneric {
         background: #0e0e10 !important;
-        box-shadow: inset 0 -1px 0 #333, -1px 0 0 #0e0e10, 1px 0 0 #0e0e10 !important;
+        box-shadow: inset 0 -1px 0 hsl(0, 0%, 10%), -1px 0 0 #0e0e10, 1px 0 0 #0e0e10 !important;
     }
     
     /* Channel title */
@@ -91,7 +92,8 @@
     .channel-intro-wrapper .channel-intro-content .channel-intro-width-wrapper .channel-nav .channel-nav-item.active,
     .tabs-wrapper .nav .nav-item.active,
     .ProfileNavItemComponent.active,
-    .ReactProfileNavItem.active {
+    .ReactProfileNavItem.active,
+    .ProfileNavItem.active {
         color: rgb(0, 144, 211) !important;
     }
 
@@ -106,8 +108,16 @@
     /* Video titles */
     .info-box .title,
     .video-content-wrapper .video-list .video-list-item,
-    .post-list .post-list-item {
+    .post-list .post-list-item,
+    .PostTileTitle {
         color: #eee !important
+    }
+    
+    /* Video post details */
+    .PostTileInfoMinor a,
+    .PostTileAge,
+    .PostTileMediaBox .duration {
+        color: #555 !important
     }
 
     /* Channel description */
@@ -123,14 +133,17 @@
 
     /* Subbox */
     .subBox, .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer,
-    .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer.sharp {
+    .ReactChannelStatsContainer, .ReactCreatorPlanBoxContainer.sharp,
+    .ChannelStatsContainer {
         background-color: rgb(30, 30, 30) !important;
         box-shadow: inset 0 -1px 0 #333, -1px 0 0 #333, 1px 0 0 #333 !important;
     }
 
     .subBox .header .price,
     .subBox .header .sub-count,
-    .ReactChannelStatsContainer > div .income-value, .ReactChannelStatsContainer > div .subs-count {
+    .ReactChannelStatsContainer > div .income-value, .ReactChannelStatsContainer > div .subs-count,
+    .ChannelStatsContainer > div .income-value, .ChannelStatsContainer > div .subs-count,
+    .ChannelStatsContainer > div .title {
         color: #fff;
     }
     
